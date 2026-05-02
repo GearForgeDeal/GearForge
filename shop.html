@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Budget Gaming Products – GearForge Shop</title>
+  <meta name="description" content="Browse all GearForge product picks in one place. Budget gaming mice, keyboards, headsets, streaming gear, and RGB accessories — all with Amazon links.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .shop-filter-bar { display: flex; gap: 10px; flex-wrap: wrap; padding: 24px 0 32px; }
+    .shop-filter-btn {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 100px;
+      border: 1px solid var(--bg-border);
+      color: var(--text-secondary);
+      background: transparent;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .shop-filter-btn:hover, .shop-filter-btn.active {
+      border-color: var(--neon-cyan);
+      color: var(--neon-cyan);
+      background: rgba(0,245,255,0.06);
+    }
+    .category-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 48px 0 24px;
+    }
+    .category-divider h2 {
+      font-size: 1rem;
+      white-space: nowrap;
+      color: var(--text-secondary);
+    }
+    .category-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--bg-border);
+    }
+    .category-divider a {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--neon-cyan);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .category-divider a:hover { text-decoration: underline; }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .product-card[data-cat] { transition: opacity 0.2s; }
+    .product-card.hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">GearForge</span></a>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link active">All Products</a></li>
+        <li><a href="index.html#blog" class="nav-link">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section style="padding: 120px 0 0;">
+    <div class="container">
+      <span class="section-tag">🛒 Full Catalogue</span>
+      <h1 style="font-size: clamp(1.8rem, 5vw, 3rem); margin: 16px 0 8px;">All <span class="gradient-text">Budget Picks</span></h1>
+      <p style="color: var(--text-secondary); max-width: 560px;">Every product we recommend, in one place. All tested. All on Amazon.</p>
+
+      <div class="shop-filter-bar">
+        <button class="shop-filter-btn active" data-filter="all">All</button>
+        <button class="shop-filter-btn" data-filter="mouse">🖱 Mice</button>
+        <button class="shop-filter-btn" data-filter="keyboard">⌨️ Keyboards</button>
+        <button class="shop-filter-btn" data-filter="headset">🎧 Headsets</button>
+        <button class="shop-filter-btn" data-filter="streaming">🎙 Streaming</button>
+        <button class="shop-filter-btn" data-filter="lighting">💡 Lighting</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="padding-bottom: 80px;">
+
+    <!-- MICE -->
+    <div class="category-divider" data-section="mouse">
+      <h2>🖱 Gaming Mice</h2>
+      <a href="category-mice.html">View all mice →</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card" data-cat="mouse">
+        <div class="product-badge">Best Value</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/00f5ff?text=G203" alt="Logitech G203" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">🖱️ Gaming Mouse</span>
+          <h3 class="product-name">Logitech G203 LIGHTSYNC</h3>
+          <div class="product-rating">★★★★★ <span>(4,200+ reviews)</span></div>
+          <p class="product-desc">8,000 DPI HERO sensor. Best sub-€30 mouse available. Period.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€24</span>
+            <a href="https://www.amazon.com/dp/B07K3C63D8?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="mouse">
+        <div class="product-badge badge-hot">🔥 Popular</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/bf00ff?text=DeathAdder" alt="Razer DeathAdder Essential" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">🖱️ Gaming Mouse</span>
+          <h3 class="product-name">Razer DeathAdder Essential</h3>
+          <div class="product-rating">★★★★☆ <span>(8,500+ reviews)</span></div>
+          <p class="product-desc">Iconic ergonomic shape. 6,400 DPI. Best for palm grip users.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€28</span>
+            <a href="https://www.amazon.com/dp/B07HBSP2PZ?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="mouse">
+        <div class="product-badge" style="background: var(--neon-purple);">Lightweight</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/00ff88?text=Rival+3" alt="SteelSeries Rival 3" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">🖱️ Gaming Mouse</span>
+          <h3 class="product-name">SteelSeries Rival 3</h3>
+          <div class="product-rating">★★★★☆ <span>(2,800+ reviews)</span></div>
+          <p class="product-desc">77g ultralight. TrueMove Core sensor. Best for fingertip grip.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€26</span>
+            <a href="https://www.amazon.com/dp/B08GHHMS35?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- KEYBOARDS -->
+    <div class="category-divider" data-section="keyboard">
+      <h2>⌨️ Keyboards</h2>
+      <a href="category-keyboards.html">View all keyboards →</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card" data-cat="keyboard">
+        <div class="product-badge">Best Value</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/00f5ff?text=K552" alt="Redragon K552" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">⌨️ Mechanical Keyboard</span>
+          <h3 class="product-name">Redragon K552 KUMARA</h3>
+          <div class="product-rating">★★★★★ <span>(12,000+ reviews)</span></div>
+          <p class="product-desc">Metal plate, Blue switches, per-key RGB. Best mechanical keyboard under €40.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€35</span>
+            <a href="https://www.amazon.com/dp/B016MAK38U?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="keyboard">
+        <div class="product-badge badge-hot">🔥 Wireless</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/bf00ff?text=RK61" alt="Royal Kludge RK61" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">⌨️ Mechanical Keyboard</span>
+          <h3 class="product-name">Royal Kludge RK61</h3>
+          <div class="product-rating">★★★★☆ <span>(5,400+ reviews)</span></div>
+          <p class="product-desc">60% layout, Bluetooth 5.0 + wired. ~2 week battery. Brown/blue/red options.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€45</span>
+            <a href="https://www.amazon.com/dp/B08GSX5GVB?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="keyboard">
+        <div class="product-badge" style="background: var(--neon-purple);">Hot-Swap</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/bf00ff?text=Phantom" alt="Tecware Phantom" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">⌨️ Mechanical Keyboard</span>
+          <h3 class="product-name">Tecware Phantom RGB</h3>
+          <div class="product-rating">★★★★☆ <span>(3,200+ reviews)</span></div>
+          <p class="product-desc">Hot-swap sockets — swap switches without soldering. Full size, metal plate.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€48</span>
+            <a href="https://www.amazon.com/dp/B07R8BWXWG?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HEADSETS -->
+    <div class="category-divider" data-section="headset">
+      <h2>🎧 Headsets</h2>
+      <a href="category-headsets.html">View all headsets →</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card" data-cat="headset">
+        <div class="product-badge">Best Overall</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/00f5ff?text=Cloud+Stinger" alt="HyperX Cloud Stinger" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">🎧 Gaming Headset</span>
+          <h3 class="product-name">HyperX Cloud Stinger</h3>
+          <div class="product-rating">★★★★★ <span>(28,000+ reviews)</span></div>
+          <p class="product-desc">50mm drivers, swivel-to-mute mic, multi-platform. Best audio under €50.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€35</span>
+            <a href="https://www.amazon.com/dp/B01LW3D62X?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="headset">
+        <div class="product-badge badge-hot">🔥 Wireless</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/bf00ff?text=Arctis+1W" alt="SteelSeries Arctis 1 Wireless" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">🎧 Gaming Headset</span>
+          <h3 class="product-name">SteelSeries Arctis 1 Wireless</h3>
+          <div class="product-rating">★★★★☆ <span>(7,200+ reviews)</span></div>
+          <p class="product-desc">USB-C dongle, 20hr battery, ClearCast mic. Wireless for the price of wired.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€50</span>
+            <a href="https://www.amazon.com/dp/B07YHFPG63?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="headset">
+        <div class="product-badge" style="background: var(--neon-orange);">Ultra Budget</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/ff6600?text=Stinger+Core" alt="HyperX Cloud Stinger Core" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">🎧 Gaming Headset</span>
+          <h3 class="product-name">HyperX Cloud Stinger Core</h3>
+          <div class="product-rating">★★★★☆ <span>(14,500+ reviews)</span></div>
+          <p class="product-desc">40mm drivers, flip-to-mute mic, plug & play. Best value under €30.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€28</span>
+            <a href="https://www.amazon.com/dp/B07YWL5ZZZ?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STREAMING -->
+    <div class="category-divider" data-section="streaming">
+      <h2>🎙 Streaming Gear</h2>
+      <a href="category-streaming.html">View all streaming gear →</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card" data-cat="streaming">
+        <div class="product-badge">Buy First</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/00f5ff?text=Snowball+iCE" alt="Blue Snowball iCE" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">🎙️ USB Microphone</span>
+          <h3 class="product-name">Blue Snowball iCE</h3>
+          <div class="product-rating">★★★★★ <span>(65,000+ reviews)</span></div>
+          <p class="product-desc">Cardioid condenser, plug & play USB. The de-facto entry-level streaming mic.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€50</span>
+            <a href="https://www.amazon.com/dp/B014B8UAJE?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="streaming">
+        <div class="product-badge badge-hot">🔥 Most Popular</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/bf00ff?text=C920" alt="Logitech C920" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">📷 Webcam</span>
+          <h3 class="product-name">Logitech C920 HD Pro</h3>
+          <div class="product-rating">★★★★★ <span>(42,000+ reviews)</span></div>
+          <p class="product-desc">1080p 30fps, autofocus, stereo mic. The streaming webcam standard for years.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€55</span>
+            <a href="https://www.amazon.com/dp/B006JH8T3S?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LIGHTING -->
+    <div class="category-divider" data-section="lighting">
+      <h2>💡 RGB &amp; Lighting</h2>
+      <a href="article-rgb-setup-under-100.html">See full RGB guide →</a>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card" data-cat="lighting">
+        <div class="product-badge" style="background: var(--neon-yellow); color: #000;">Best Bang/Buck</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/ffee00?text=Govee+LED" alt="Govee LED Strip" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">💡 LED Strip</span>
+          <h3 class="product-name">Govee LED Strip Lights (2m)</h3>
+          <div class="product-rating">★★★★☆ <span>(22,000+ reviews)</span></div>
+          <p class="product-desc">App control, 16M colors, music sync. Transforms any desk into a gaming setup for €12.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€12</span>
+            <a href="https://www.amazon.com/dp/B07CL2RMR7?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="lighting">
+        <div class="product-badge" style="background: var(--neon-yellow); color: #000;">Streamer Light</div>
+        <div class="product-img-wrap">
+          <img src="https://via.placeholder.com/280x180/0d1117/ffee00?text=Ring+Light" alt="Neewer Ring Light" class="product-img" loading="lazy">
+        </div>
+        <div class="product-info">
+          <span class="product-cat">💡 Key Light</span>
+          <h3 class="product-name">Neewer 10" LED Ring Light</h3>
+          <div class="product-rating">★★★★☆ <span>(18,000+ reviews)</span></div>
+          <p class="product-desc">Best upgrade for webcam quality. Adjustable color temp, stand included.</p>
+          <div class="product-price-row">
+            <span class="product-price">~€30</span>
+            <a href="https://www.amazon.com/dp/B01LXDNNBW?tag=YOUR-AFFILIATE-TAG" target="_blank" rel="noopener nofollow" class="btn btn-amazon">🛒 Buy on Amazon</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2025 GearForge · <a href="affiliate-disclosure.html" style="color: var(--text-muted);">Affiliate Disclosure</a> · As an Amazon Associate we earn from qualifying purchases.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const filterBtns = document.querySelectorAll('.shop-filter-btn');
+    const cards = document.querySelectorAll('.product-card[data-cat]');
+    const sections = document.querySelectorAll('.category-divider');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.cat === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        sections.forEach(sec => {
+          const sectionCat = sec.dataset.section;
+          const hasVisible = [...cards].some(c => c.dataset.cat === sectionCat && !c.classList.contains('hidden'));
+          sec.style.display = (filter === 'all' || hasVisible) ? '' : 'none';
+          const grid = sec.nextElementSibling;
+          if (grid) grid.style.display = (filter === 'all' || hasVisible) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
