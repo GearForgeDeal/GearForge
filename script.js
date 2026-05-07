@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
   1. Sign up at affiliate-program.amazon.com
   2. Get your unique affiliate tag (e.g. gearforge-21)
   3. Find any product on Amazon, click "Get link" in SiteStripe
-  4. Replace "YOUR-AFFILIATE-TAG" throughout this site with your tag
+  4. Replace "gearforge0d-20" throughout this site with your tag
   5. Or use the short link format:
      https://www.amazon.com/dp/ASIN?tag=gearforge-21
   6. For EU traffic (.de, .fr, .it etc.) use Amazon OneLink to
