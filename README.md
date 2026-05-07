@@ -27,12 +27,12 @@
 1. Go to: https://affiliate-program.amazon.com (or .co.uk / .de for European)
 2. Sign up for Amazon Associates
 3. Your tag will look like: `gearforge-21` or `yourname-20`
-4. Find & replace ALL instances of `YOUR-AFFILIATE-TAG` with your tag
+4. Find & replace ALL instances of `gearforge0d-20` with your tag
 
 ### Step 2: Replace Product Links
 Each product card has a link like:
 ```
-https://www.amazon.com/dp/B091V1LJ4Q?tag=YOUR-AFFILIATE-TAG
+https://www.amazon.com/dp/B091V1LJ4Q?tag=gearforge0d-20
 ```
 - Verify each ASIN (product code) is still valid on Amazon
 - Get fresh links from Amazon SiteStripe bar (top of Amazon pages when logged in as Associate)
