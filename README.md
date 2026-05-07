@@ -32,7 +32,7 @@
 ### Step 2: Replace Product Links
 Each product card has a link like:
 ```
-https://www.amazon.com/dp/B07K3C63D8?tag=YOUR-AFFILIATE-TAG
+https://www.amazon.com/dp/B091V1LJ4Q?tag=YOUR-AFFILIATE-TAG
 ```
 - Verify each ASIN (product code) is still valid on Amazon
 - Get fresh links from Amazon SiteStripe bar (top of Amazon pages when logged in as Associate)
